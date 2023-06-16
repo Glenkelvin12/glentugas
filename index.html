@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            body {
+                transition: background-color 0.5s;
+            }
+            .success {
+                background-color: lightgreen;
+            }
+            .failure { background-color: blue};
+            .message {
+                text-align: center;
+                font-size: 25px;
+                font-weight: bold;
+                color: white;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <script>
+            let username = prompt("masukan username:")
+            let password = prompt("masukan password:")
+            if (username === "glen" && password === "1212")
+            {
+                document.body.classList.add("success")
+                document.write("<div class='message'>Anda berhasil login!</div>")
+            } else {
+                document.body.classList.add("failure")
+                document.write("<div class='message'>Login gagal.silakan coba lagi.</div>)
+            }
+        </script>
+    </body>
+</html>
